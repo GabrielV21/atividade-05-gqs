@@ -1,8 +1,9 @@
 
-@test
-void testSenhaComMenosDeDoisDigitos {
+@Test
+void testSenhaComDoisOuMaisDigitos() {
     ValidadorSenha senha = new ValidadorSenha();
-    senha.validaDigitos("Senha@"); // 0 dígitos
-    assertFalse(senha.isValid());
-    assertTrue(senha.getErros().contains("A senha deve conter pelo menos 2 dígitos"));
+    senha.validaDigitos("Abcde12@"); // 2 dígitos
+    assertTrue(senha.isValid());
+    assertTrue(senha.getErros().isEmpty());
 }
+

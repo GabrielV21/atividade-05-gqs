@@ -12,5 +12,9 @@ public class ValidadorSenha {
     public List<String> getErrors() {
         return errors;
     }
+
+    public void validaTamanho(String senha) {
+        // método vazio 
+    }
     
 }

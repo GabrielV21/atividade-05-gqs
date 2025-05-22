@@ -9,7 +9,7 @@ public class ValidadorSenhaTeste {
         ValidadorSenha senha = new ValidadorSenha();
         senha.validaTamanho("123");
         assertFalse(senha.isValid());
-        assertTrue(senha.getErrors().contains("A senha deve ter pelo menos 8 caracteres"));
+        assertTrue(senha.getErros().contains("A senha deve ter pelo menos 8 caracteres"));
     }
     
 }

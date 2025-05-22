@@ -14,7 +14,7 @@ public class ValidadorSenha {
     }
 
     public void validaTamanho(String senha) {
-        // método vazio 
+        this.valid = true;
     }
-    
+
 }

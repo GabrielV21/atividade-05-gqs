@@ -23,6 +23,8 @@ public class ValidadorSenha {
             this.valid = false;
         }
     }
+    public void validaLetraMaiuscula(String senha) {
+}
     public void validaDigitos(String senha) {
         int digitos = 0;
         for (char c : senha.toCharArray()) {

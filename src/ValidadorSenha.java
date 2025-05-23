@@ -24,6 +24,20 @@ public class ValidadorSenha {
         }
     }
     public void validaLetraMaiuscula(String senha) {
+    boolean temMaiuscula = false;
+    for (char c : senha.toCharArray()) {
+        if (Character.isUpperCase(c)) {
+            temMaiuscula = true;
+            break;
+        }
+    }
+
+    if (!temMaiuscula) {
+        this.erros.add("A senha deve conter pelo menos uma letra maiúscula");
+        this.valid = false;
+    } else {
+        this.valid = true;
+    }
 }
     public void validaDigitos(String senha) {
         int digitos = 0;
@@ -38,10 +52,6 @@ public class ValidadorSenha {
         } else {
             this.valid = true;
         }
-        public void validaLetraMaiuscula(String senha) {
-    // lógica será implementada depois
-}
-
     }
 }
 

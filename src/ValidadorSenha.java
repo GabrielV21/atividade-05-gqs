@@ -23,6 +23,8 @@ public class ValidadorSenha {
             this.valid = false;
         }
     }
+    public void validaLetraMaiuscula(String senha) {
+}
     public void validaDigitos(String senha) {
         int digitos = 0;
         for (char c : senha.toCharArray()) {
@@ -36,6 +38,10 @@ public class ValidadorSenha {
         } else {
             this.valid = true;
         }
+        public void validaLetraMaiuscula(String senha) {
+    // lógica será implementada depois
+}
+
     }
 }
 

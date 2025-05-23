@@ -27,6 +27,7 @@ public class ValidadorSenhaTeste {
         assertTrue(senha.getErros().contains("A senha deve conter pelo menos uma letra maiúscula"));
     }
   }
+
 }
     
 

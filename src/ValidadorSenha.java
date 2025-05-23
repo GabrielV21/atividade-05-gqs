@@ -36,6 +36,10 @@ public class ValidadorSenha {
         } else {
             this.valid = true;
         }
+        public void validaLetraMaiuscula(String senha) {
+    // lógica será implementada depois
+}
+
     }
 }
 

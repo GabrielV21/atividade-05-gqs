@@ -19,6 +19,14 @@ public class ValidadorSenhaTeste {
         assertTrue(senha.isValid());
         assertTrue(senha.getErros().isEmpty());
     }
+    @Test
+void testSenhaSemLetraMaiuscula() {
+    ValidadorSenha senha = new ValidadorSenha();
+    senha.validaLetraMaiuscula("senha123");
+    assertFalse(senha.isValid());
+    assertTrue(senha.getErros().contains("A senha deve conter pelo menos uma letra maiúscula"));
+}
+
 
 }
     
